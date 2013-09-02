@@ -1,8 +1,13 @@
 Omrails::Application.routes.draw do
 
+<<<<<<< HEAD
   get "users/show"
 
   resources :pins
+=======
+  resources :posts
+
+>>>>>>> 06f7e92
 
   devise_for :users
   match 'users/:id' => 'users#show', as: :user
